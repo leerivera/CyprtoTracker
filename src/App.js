@@ -100,8 +100,11 @@ export default function App() {
     ws.current.send(unsub);
 
     setpair(e.target.value);
+    
+    
   };
   return (
+    
     <div className="container">
       {
         <select name="currency" value={pair} onChange={handleSelect}>
@@ -115,7 +118,7 @@ export default function App() {
         </select>
       }
       <Dashboard price={price} data={pastData} />
-      <Cards price={price} />
+      <Cards price={price}/>
     </div>
   );
 }
