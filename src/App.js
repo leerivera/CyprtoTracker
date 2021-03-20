@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import Dashboard from "./components/Dashboard";
+import Cards from "./components/Cards"
 import { formatData } from "./utils";
 import "./styles.css";
 
@@ -114,6 +115,7 @@ export default function App() {
         </select>
       }
       <Dashboard price={price} data={pastData} />
+      <Cards price={price} />
     </div>
   );
 }
